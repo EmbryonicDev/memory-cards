@@ -15,3 +15,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Header */
+.headerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border: solid black;
+}
+
+.textInfo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.headerDiv button {
+  font-size: 2rem;
+}
+
+.score {
+  text-align: center;
+}
