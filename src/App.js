@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "./components/Header";
 
 function App() {
   const [score, setScore] = useState(0);
@@ -6,6 +7,10 @@ function App() {
 
   return (
     <div className="App">
+      <Header
+        score={score}
+        highScore={highScore}
+      />
     </div>
   );
 }
