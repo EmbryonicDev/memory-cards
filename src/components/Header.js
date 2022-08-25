@@ -3,8 +3,10 @@ export default function Header(props) {
 
   return (
     <div className="headerDiv">
-      <h1 className="headerText">Memory Game</h1>
-      <button className="instructions">i</button>
+      <div className="textInfo">
+        <h1 className="headerText">Memory Game</h1>
+        <button className="instructions">i</button>
+      </div>
       <div className="score">
         <h3>Current Score</h3>
         <h3>{score}</h3>
