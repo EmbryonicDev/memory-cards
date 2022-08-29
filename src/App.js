@@ -13,9 +13,6 @@ function App() {
         score={score}
         highScore={highScore}
       />
-      <Cards
-        gameLevel={gameLevel}
-      />
     </div>
   );
 }
