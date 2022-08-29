@@ -22,7 +22,6 @@ import snowman from "../assets/icons/snowman.svg"
 import tent from "../assets/icons/tent.svg"
 import gun from "../assets/icons/gun.svg"
 import worm from "../assets/icons/worm.svg"
-import { useState } from "react"
 
 export default function Cards() {
 
@@ -57,11 +56,5 @@ export default function Cards() {
     return newArr
   };
 
-  return (
-    console.log(shuffledCards(cardObjects()))
-  )
+  return shuffledCards(cardObjects());
 }
-
-
-
-
