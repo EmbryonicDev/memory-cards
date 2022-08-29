@@ -40,7 +40,8 @@ export default function Cards() {
     for (let i = 0; i < cardsIcons.length; i++) {
       const obj = {
         icon: cardsIcons[i],
-        text: cardTextArr[i]
+        text: cardTextArr[i],
+        selected: false
       };
       arr.push(obj);
     }
