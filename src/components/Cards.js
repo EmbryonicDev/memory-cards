@@ -25,15 +25,15 @@ import worm from "../assets/icons/worm.svg"
 import { useState } from "react"
 
 export default function Cards() {
-  // Below arrays must match
-  const cardsIcons = [apple, bitcoin, brush, bus, camera, car, crow, dragon, feather, fire, hammer, hiker, hippo, horse, igloo, meteor, moon, motorbike, robot, shuttle, snowman, tent, gun, worm];
-  const draftCardTextArr = ['apple', 'bitcoin', 'brush', 'bus', 'camera', 'car', 'crow', 'dragon', 'feather', 'fire', 'hammer', 'hiker', 'hippo', 'horse', 'igloo', 'meteor', 'moon', 'motorbike', 'robot', 'shuttle', 'snowman', 'tent', 'gun', 'worm'];
 
   function toTitleCase(arr) {
     return arr.map(obj => obj.charAt(0).toUpperCase() + obj.substr(1))
   }
 
   const cardObjects = () => {
+    // Below 2 x arrays must match
+    const cardsIcons = [apple, bitcoin, brush, bus, camera, car, crow, dragon, feather, fire, hammer, hiker, hippo, horse, igloo, meteor, moon, motorbike, robot, shuttle, snowman, tent, gun, worm];
+    const draftCardTextArr = ['apple', 'bitcoin', 'brush', 'bus', 'camera', 'car', 'crow', 'dragon', 'feather', 'fire', 'hammer', 'hiker', 'hippo', 'horse', 'igloo', 'meteor', 'moon', 'motorbike', 'robot', 'shuttle', 'snowman', 'tent', 'gun', 'worm'];
     const cardTextArr = toTitleCase(draftCardTextArr);
     const arr = [];
 
