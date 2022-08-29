@@ -6,6 +6,9 @@ function App() {
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(localStorage.getItem('highScore') || 0);
   const [gameLevel, setGameLevel] = useState(0);
+  const [allCards, setAllCards] = useState(Cards());
+
+  console.log(allCards)
 
   return (
     <div className="App">
