@@ -10,6 +10,7 @@ function App() {
   const [gameLevel, setGameLevel] = useState(0);
   const [allCards, setAllCards] = useState(Cards());
   const [activeCards, setActiveCards] = useState(allCards.slice(0, 6));
+  const [gameOver, setGameOver] = useState(false);
 
   // console.log(allCards)
   console.log(activeCards);
