@@ -22,6 +22,7 @@ import snowman from "../assets/icons/snowman.svg"
 import tent from "../assets/icons/tent.svg"
 import gun from "../assets/icons/gun.svg"
 import worm from "../assets/icons/worm.svg"
+import { shuffleCards } from "../functions"
 
 export default function Cards() {
 
@@ -47,14 +48,5 @@ export default function Cards() {
     return arr;
   }
 
-  const shuffledCards = arr => {
-    const newArr = arr.slice()
-    for (let i = newArr.length - 1; i > 0; i--) {
-      const rand = Math.floor(Math.random() * (i + 1));
-      [newArr[i], newArr[rand]] = [newArr[rand], newArr[i]];
-    }
-    return newArr
-  };
-
-  return shuffledCards(cardObjects());
+  return shuffleCards(cardObjects());
 }
