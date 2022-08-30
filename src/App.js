@@ -2,6 +2,7 @@ import { useState } from "react";
 import Cards from "./components/Cards";
 import DisplayCards from "./components/DisplayCards";
 import Header from "./components/Header";
+import { shuffleCards } from "./functions";
 
 function App() {
   const [score, setScore] = useState(0);
@@ -10,11 +11,12 @@ function App() {
   const [allCards, setAllCards] = useState(Cards());
   const [activeCards, setActiveCards] = useState(allCards.slice(0, 6));
 
-  console.log(allCards)
+  // console.log(allCards)
   console.log(activeCards);
 
   function handleClick(text) {
     console.log(text + " icon clicked")
+    setActiveCards(shuffleCards(activeCards))
   }
 
   const cardObjects = activeCards.map(card => {
