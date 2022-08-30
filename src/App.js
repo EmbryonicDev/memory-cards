@@ -19,6 +19,7 @@ function App() {
     setActiveCards(shuffleCards(activeCards));
     setActiveCards(prevState => prevState.map(card => {
       if (card.text === text && !card.selected) {
+        setScore(prevState => prevState + 1);
         return { ...card, selected: true }
       } else {
         return card
