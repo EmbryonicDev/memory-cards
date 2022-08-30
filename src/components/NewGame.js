@@ -1,5 +1,5 @@
 export default function NewGame(props) {
-  const { wrongCard, highScore, startNewGame } = props;
+  const { wrongCard, startNewGame } = props;
 
   return (
     <div className="newGameDiv">
