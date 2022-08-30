@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Cards from "./components/Cards";
 import DisplayCards from "./components/DisplayCards";
 import Header from "./components/Header";
+import NewGame from "./components/NewGame";
 import { shuffleCards } from "./functions";
 
 function App() {
@@ -23,9 +24,11 @@ function App() {
       if (card.text === text && !card.selected) {
         setScore(prevState => prevState + 1);
         return { ...card, selected: true }
-      } else {
-        return card
+      } else if (card.text === text && card.selected) {
+        setWrongCard(text);
+        setGameOver(true);
       }
+      return card
     }));
   }
 
