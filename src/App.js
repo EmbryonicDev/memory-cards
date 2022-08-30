@@ -11,6 +11,7 @@ function App() {
   const [allCards, setAllCards] = useState(Cards());
   const [activeCards, setActiveCards] = useState(allCards.slice(0, 6));
   const [gameOver, setGameOver] = useState(false);
+  const [wrongCard, setWrongCard] = useState()
 
   // console.log(allCards)
   console.log(activeCards);
