@@ -16,7 +16,14 @@ function App() {
 
   function handleClick(text) {
     console.log(text + " icon clicked")
-    setActiveCards(shuffleCards(activeCards))
+    setActiveCards(shuffleCards(activeCards));
+    setActiveCards(prevState => prevState.map(card => {
+      if (card.text === text && !card.selected) {
+        return { ...card, selected: true }
+      } else {
+        return card
+      }
+    }));
   }
 
   const cardObjects = activeCards.map(card => {
