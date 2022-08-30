@@ -32,6 +32,14 @@ function App() {
     }));
   }
 
+  function startNewGame() {
+    console.log('New Game')
+    setAllCards(Cards());
+    setActiveCards(allCards.slice(0, 6));
+    setScore(0);
+    setGameOver(false);
+  }
+
   const cardObjects = activeCards.map(card => {
     return (
       <DisplayCards
@@ -57,6 +65,7 @@ function App() {
             <NewGame
               wrongCard={wrongCard}
               highScore={highScore}
+              startNewGame={startNewGame}
             />
         }
       </div>
