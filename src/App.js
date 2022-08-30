@@ -51,7 +51,14 @@ function App() {
         highScore={highScore}
       />
       <div className="board">
-        {cardObjects}
+        {
+          !gameOver ?
+            cardObjects :
+            <NewGame
+              wrongCard={wrongCard}
+              highScore={highScore}
+            />
+        }
       </div>
     </div>
   );
