@@ -17,13 +17,30 @@ function App() {
 
   useEffect(() => {
     const selectedCards = activeCards.filter(card => card.selected).length;
-    console.log(selectedCards)
 
-    if (score === 6) {
+    // Set score increments
+    if (selectedCards >= 22) {
+      setScoreIncrement(11)
+    } else if (selectedCards >= 18) {
+      setScoreIncrement(7)
+    } else if (selectedCards >= 16) {
+      setScoreIncrement(6)
+    } else if (selectedCards >= 12) {
+      setScoreIncrement(5)
+    } else if (selectedCards >= 10) {
+      setScoreIncrement(4)
+    } else if (selectedCards >= 6) {
+      setScoreIncrement(3)
+    } else if (selectedCards >= 4) {
+      setScoreIncrement(2)
+    }
+
+    // Add new cards as all are selected
+    if (selectedCards === 6) {
       setActiveCards(shuffleCards([...activeCards, ...allCards.slice(6, 12)]));
-    } else if (score === 12) {
+    } else if (selectedCards === 12) {
       setActiveCards(shuffleCards([...activeCards, ...allCards.slice(12, 18)]));
-    } else if (score === 18) {
+    } else if (selectedCards === 18) {
       setActiveCards(shuffleCards([...activeCards, ...allCards.slice(18, 24)]));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -46,10 +63,13 @@ function App() {
 
   function startNewGame() {
     console.log('New Game')
-    setAllCards(Cards());
+    setAllCards(Cards())
     setActiveCards(allCards.slice(0, 6));
     setScore(0);
+    setScoreIncrement(1);
     setGameOver(false);
+    console.log(allCards)
+    console.log(activeCards)
   }
 
   const cardObjects = activeCards.map(card => {
