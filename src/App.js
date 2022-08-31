@@ -12,7 +12,18 @@ function App() {
   const [allCards, setAllCards] = useState(Cards());
   const [activeCards, setActiveCards] = useState(allCards.slice(0, 6));
   const [gameOver, setGameOver] = useState(false);
-  const [wrongCard, setWrongCard] = useState()
+  const [wrongCard, setWrongCard] = useState();
+
+  useEffect(() => {
+    if (score === 6) {
+      setActiveCards(shuffleCards([...activeCards, ...allCards.slice(6, 12)]));
+    } else if (score === 12) {
+      setActiveCards(shuffleCards([...activeCards, ...allCards.slice(12, 18)]));
+    } else if (score === 18) {
+      setActiveCards(shuffleCards([...activeCards, ...allCards.slice(18, 24)]));
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [score])
 
   function handleClick(text) {
     console.log(text + " icon clicked")
