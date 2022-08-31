@@ -16,6 +16,9 @@ function App() {
   const [scoreIncrement, setScoreIncrement] = useState(1);
 
   useEffect(() => {
+    const selectedCards = activeCards.filter(card => card.selected).length;
+    console.log(selectedCards)
+
     if (score === 6) {
       setActiveCards(shuffleCards([...activeCards, ...allCards.slice(6, 12)]));
     } else if (score === 12) {
