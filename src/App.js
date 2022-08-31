@@ -13,6 +13,7 @@ function App() {
   const [activeCards, setActiveCards] = useState(allCards.slice(0, 6));
   const [gameOver, setGameOver] = useState(false);
   const [wrongCard, setWrongCard] = useState();
+  const [scoreIncrement, setScoreIncrement] = useState(1);
 
   useEffect(() => {
     if (score === 6) {
