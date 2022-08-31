@@ -54,6 +54,7 @@ function App() {
         setScore(prevState => prevState + scoreIncrement);
         return { ...card, selected: true }
       } else if (card.text === text && card.selected) {
+        setAllCards(Cards());
         setWrongCard(text);
         setGameOver(true);
       }
@@ -63,7 +64,6 @@ function App() {
 
   function startNewGame() {
     console.log('New Game')
-    setAllCards(Cards())
     setActiveCards(allCards.slice(0, 6));
     setScore(0);
     setScoreIncrement(1);
