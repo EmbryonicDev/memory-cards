@@ -1,0 +1,27 @@
+
+- Level 0: 
+- first 6 indexes pushed to page & to 'activeCards arr'
+- cards to be updated as selected
+- if same card selected twice, new Game (message first, then new game)
+- 
+
+Level 2 - 12 cards: 
+- 6 new cards added to activeCards arr
+
+Level 3 - 18 cards: 
+- 6 new cards added to activeCards arr
+
+
+Level 4 - 24 cards: 
+- 6 new cards added to activeCards arr
+	
+	
+- Score to updated with every select
+- High Score updated after each Game
+- High score to local storage
+
+- change SVG color
+
+- increase score on each Level
+- fade in new blocks on each Level
+- confetti  when game won
