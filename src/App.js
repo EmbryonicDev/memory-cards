@@ -14,9 +14,6 @@ function App() {
   const [gameOver, setGameOver] = useState(false);
   const [wrongCard, setWrongCard] = useState()
 
-  // console.log(allCards)
-  console.log(activeCards);
-
   function handleClick(text) {
     console.log(text + " icon clicked")
     setActiveCards(shuffleCards(activeCards));
