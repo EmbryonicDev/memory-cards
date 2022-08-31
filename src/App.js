@@ -68,8 +68,6 @@ function App() {
     setScore(0);
     setScoreIncrement(1);
     setGameOver(false);
-    console.log(allCards)
-    console.log(activeCards)
   }
 
   const cardObjects = activeCards.map(card => {
