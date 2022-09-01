@@ -46,6 +46,10 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [score])
 
+  useEffect(() => {
+    localStorage.setItem('highScore', highScore)
+  }, [highScore])
+
   function handleClick(text) {
     console.log(text + " icon clicked")
     setActiveCards(shuffleCards(activeCards));
