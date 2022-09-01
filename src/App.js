@@ -20,6 +20,9 @@ function App() {
   useEffect(() => {
     const selectedCards = activeCards.filter(card => card.selected).length;
 
+    // Game Won
+    selectedCards === 24 && setGameWon(true);
+
     // Set score increments
     if (selectedCards >= 22) {
       setScoreIncrement(11)
