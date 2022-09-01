@@ -42,10 +42,18 @@ code {
 /* Board */
 .board {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 16px;
   margin-top: 30px;
+}
+
+.activeCards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Cards */
