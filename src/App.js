@@ -3,6 +3,7 @@ import Cards from "./components/Cards";
 import DisplayCards from "./components/DisplayCards";
 import Header from "./components/Header";
 import NewGame from "./components/NewGame";
+import GameWon from "./components/GameWon";
 import { shuffleCards } from "./functions";
 
 function App() {
@@ -96,13 +97,22 @@ function App() {
       />
       <div className="board">
         {
-          !gameOver ?
-            cardObjects :
-            <NewGame
-              wrongCard={wrongCard}
-              highScore={highScore}
-              startNewGame={startNewGame}
-            />
+          (!gameOver && !gameWon) &&
+          cardObjects
+        }
+        {
+          gameOver &&
+          <NewGame
+            wrongCard={wrongCard}
+            highScore={highScore}
+            startNewGame={startNewGame}
+          />
+        }
+        {
+          gameWon &&
+          <GameWon
+            startNewGame={startNewGame}
+          />
         }
       </div>
     </div>
