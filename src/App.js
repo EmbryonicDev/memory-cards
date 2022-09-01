@@ -78,6 +78,7 @@ function App() {
     setScore(0);
     setScoreIncrement(1);
     setGameOver(false);
+    setGameWon(false);
   }
 
   const cardObjects = activeCards.map(card => {
