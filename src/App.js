@@ -65,6 +65,7 @@ function App() {
   function startNewGame() {
     console.log('New Game')
     setActiveCards(allCards.slice(0, 6));
+    score > highScore && setHighScore(score);
     setScore(0);
     setScoreIncrement(1);
     setGameOver(false);
