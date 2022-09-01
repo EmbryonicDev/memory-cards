@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import NewGame from "./components/NewGame";
 import GameWon from "./components/GameWon";
 import { shuffleCards } from "./functions";
+import Confetti from 'react-confetti';
 
 function App() {
   const [score, setScore] = useState(0);
@@ -112,6 +113,7 @@ function App() {
             startNewGame={startNewGame}
           />
         }
+        {gameWon && <Confetti />}
         {
           gameWon &&
           <GameWon
