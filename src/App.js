@@ -115,18 +115,18 @@ function App() {
           />
         }
         {
-          (!gameOver && !gameWon) &&
-          <div className="activeCards">
-            {cardObjects}
-          </div>
-        }
-        {
           gameOver &&
           <NewGame
             wrongCard={wrongCard}
             highScore={highScore}
             startNewGame={startNewGame}
           />
+        }
+        {
+          !gameWon &&
+          <div className="activeCards">
+            {cardObjects}
+          </div>
         }
         {gameWon && <Confetti />}
         {
