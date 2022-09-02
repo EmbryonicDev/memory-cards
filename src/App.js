@@ -11,7 +11,6 @@ import GameInfo from "./components/GameInfo";
 function App() {
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(localStorage.getItem('highScore') || 0);
-  const [gameLevel, setGameLevel] = useState(0);
   const [allCards, setAllCards] = useState(Cards());
   const [activeCards, setActiveCards] = useState(allCards.slice(0, 6));
   const [gameOver, setGameOver] = useState(false);
