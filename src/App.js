@@ -6,6 +6,7 @@ import NewGame from "./components/NewGame";
 import GameWon from "./components/GameWon";
 import { shuffleCards } from "./functions";
 import Confetti from 'react-confetti';
+import GameInfo from "./components/GameInfo";
 
 function App() {
   const [score, setScore] = useState(0);
@@ -17,9 +18,13 @@ function App() {
   const [gameWon, setGameWon] = useState(false);
   const [wrongCard, setWrongCard] = useState();
   const [scoreIncrement, setScoreIncrement] = useState(1);
+  const [selectedCards, setSelectedCards] = useState(0);
 
   useEffect(() => {
-    const selectedCards = activeCards.filter(card => card.selected).length;
+    // const selectedCards = activeCards.filter(card => card.selected).length;
+    // getSelectedCards()
+    setSelectedCards(activeCards.filter(card => card.selected).length + 1);
+
 
     // Game Won
     selectedCards === 24 && setGameWon(true);
@@ -101,9 +106,14 @@ function App() {
         highScore={highScore}
       />
       <div className="board">
+        <GameInfo
+          selectedCards={selectedCards}
+        />
         {
           (!gameOver && !gameWon) &&
-          cardObjects
+          <div className="activeCards">
+            {cardObjects}
+          </div>
         }
         {
           gameOver &&
