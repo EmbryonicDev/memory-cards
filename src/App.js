@@ -95,6 +95,8 @@ function App() {
         text={card.text}
         handleClick={() => handleClick(card.text)}
         key={card.text}
+        gameOver={gameOver}
+        wrongCard={wrongCard}
       />
     )
   })
