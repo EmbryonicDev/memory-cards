@@ -58,7 +58,6 @@ function App() {
   }, [highScore])
 
   function handleClick(text) {
-    console.log(text + " icon clicked")
     setActiveCards(shuffleCards(activeCards));
     setActiveCards(prevState => prevState.map(card => {
       if (card.text === text && !card.selected) {
