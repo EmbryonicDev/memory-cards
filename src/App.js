@@ -106,9 +106,12 @@ function App() {
         highScore={highScore}
       />
       <div className="board">
-        <GameInfo
-          selectedCards={selectedCards}
-        />
+        {
+          (!gameOver && !gameWon) &&
+          <GameInfo
+            selectedCards={selectedCards}
+          />
+        }
         {
           (!gameOver && !gameWon) &&
           <div className="activeCards">
