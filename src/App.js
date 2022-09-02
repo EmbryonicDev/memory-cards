@@ -20,10 +20,7 @@ function App() {
   const [selectedCards, setSelectedCards] = useState(0);
 
   useEffect(() => {
-    // const selectedCards = activeCards.filter(card => card.selected).length;
-    // getSelectedCards()
     setSelectedCards(activeCards.filter(card => card.selected).length + 1);
-
 
     // Game Won
     selectedCards === 24 && setGameWon(true);
