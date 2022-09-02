@@ -95,6 +95,8 @@ function App() {
         text={card.text}
         handleClick={() => handleClick(card.text)}
         key={card.text}
+        gameOver={gameOver}
+        wrongCard={wrongCard}
       />
     )
   })
@@ -113,18 +115,18 @@ function App() {
           />
         }
         {
-          (!gameOver && !gameWon) &&
-          <div className="activeCards">
-            {cardObjects}
-          </div>
-        }
-        {
           gameOver &&
           <NewGame
             wrongCard={wrongCard}
             highScore={highScore}
             startNewGame={startNewGame}
           />
+        }
+        {
+          !gameWon &&
+          <div className="activeCards">
+            {cardObjects}
+          </div>
         }
         {gameWon && <Confetti />}
         {
