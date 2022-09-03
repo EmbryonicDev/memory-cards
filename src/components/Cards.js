@@ -22,6 +22,13 @@ import snowman from "../assets/icons/snowman.svg"
 import tent from "../assets/icons/tent.svg"
 import gun from "../assets/icons/gun.svg"
 import worm from "../assets/icons/worm.svg"
+import explosion from "../assets/icons/explosion.svg"
+import church from "../assets/icons/church.svg"
+import glasses from "../assets/icons/glasses.svg"
+import mountain from "../assets/icons/mountain.svg"
+import coffee from "../assets/icons/coffee.svg"
+import rain from "../assets/icons/rain.svg"
+
 import { shuffleCards } from "../functions"
 
 export default function Cards() {
@@ -32,8 +39,8 @@ export default function Cards() {
 
   const cardObjects = () => {
     // Below 2 x arrays must match
-    const cardsIcons = [apple, bitcoin, brush, bus, camera, car, crow, dragon, feather, fire, hammer, hiker, hippo, horse, igloo, meteor, moon, motorbike, robot, shuttle, snowman, tent, gun, worm];
-    const draftCardTextArr = ['apple', 'bitcoin', 'brush', 'bus', 'camera', 'car', 'crow', 'dragon', 'feather', 'fire', 'hammer', 'hiker', 'hippo', 'horse', 'igloo', 'meteor', 'moon', 'motorbike', 'robot', 'shuttle', 'snowman', 'tent', 'gun', 'worm'];
+    const cardsIcons = [apple, bitcoin, brush, bus, camera, car, crow, dragon, feather, fire, hammer, hiker, hippo, horse, igloo, meteor, moon, motorbike, robot, shuttle, snowman, tent, gun, worm, explosion, church, glasses, mountain, coffee, rain];
+    const draftCardTextArr = ['apple', 'bitcoin', 'brush', 'bus', 'camera', 'car', 'crow', 'dragon', 'feather', 'fire', 'hammer', 'hiker', 'hippo', 'horse', 'igloo', 'meteor', 'moon', 'motorbike', 'robot', 'shuttle', 'snowman', 'tent', 'gun', 'worm', 'explosion', 'church', 'glasses', 'mountain', 'coffee', 'rain'];
     const cardTextArr = toTitleCase(draftCardTextArr);
     const arr = [];
 
