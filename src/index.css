@@ -91,7 +91,6 @@ code {
   padding: 12px;
   border-radius: 12px;
   box-shadow: 5px 8px 5px #475569;
-  background-color: #60a5fa;
 }
 
 .gameInfo h1,
@@ -113,7 +112,8 @@ code {
   background: #fb7185;
 }
 
-.gameWonDiv {
+.gameWonDiv,
+.gameInfo {
   background: #1d4ed8;
   color: #f8fafc;
 }
