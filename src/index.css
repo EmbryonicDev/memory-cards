@@ -31,7 +31,21 @@ code {
   align-items: center;
   padding: 0 16px;
   background-image: linear-gradient(to right, #dbeafe, #bfdbfe, #93c5fd, #60a5fa, #3b82f6, #2563eb, #3b82f6, #60a5fa, #93c5fd, #bfdbfe, #dbeafe);
-  box-shadow: 0 8px 6px -1px #475569
+  box-shadow: 0 8px 6px -1px #475569;
+  position: relative;
+}
+
+.instructions {
+  position: fixed;
+  width: 350px;
+  left: 300px;
+  top: 30px;
+  background: #64748b;
+  color: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 5px 8px 5px #1e293b;
+  padding: 0 8px;
+
 }
 
 .textInfo {
