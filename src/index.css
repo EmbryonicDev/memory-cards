@@ -56,6 +56,25 @@ code {
   margin-top: 30px;
 }
 
+/* Game info */
+.gameInfo {
+  border: solid black;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 5px 8px 5px #475569;
+  background-color: #60a5fa;
+}
+
+.gameInfo h1,
+.gameInfo h2 {
+  margin: 0 0 6px;
+}
+
+.gameInfo h2:last-of-type {
+  margin: 0;
+}
+
+/* Cards */
 .activeCards {
   display: flex;
   gap: 16px;
@@ -63,7 +82,6 @@ code {
   justify-content: center;
 }
 
-/* Cards */
 .cardDiv {
   display: flex;
   flex-direction: column;
