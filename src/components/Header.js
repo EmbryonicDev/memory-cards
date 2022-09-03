@@ -5,7 +5,7 @@ export default function Header(props) {
     <div className="headerDiv">
       <div className="textInfo">
         <h1 className="headerText">Memory Game</h1>
-        <button className="instructions">i</button>
+        <button>i</button>
       </div>
       <div className="score">
         <h2>Current Score</h2>
