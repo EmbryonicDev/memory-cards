@@ -4,7 +4,7 @@ export default function DisplayCards(props) {
   let style;
 
   if (selected && gameOver) style = { backgroundColor: '#4ade80' };
-  if (text === wrongCard) style = { backgroundColor: 'red' };
+  if (text === wrongCard) style = { backgroundColor: '#fb7185' };
 
   if (gameOver) {
     return (
