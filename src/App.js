@@ -53,6 +53,8 @@ function App() {
       setActiveCards(shuffleCards([...activeCards, ...allCards.slice(12, 18)]));
     } else if (selectedCards === 18) {
       setActiveCards(shuffleCards([...activeCards, ...allCards.slice(18, 24)]));
+    } else if (selectedCards === 24) {
+      setActiveCards(shuffleCards([...activeCards, ...allCards.slice(24, 30)]));
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [score])
