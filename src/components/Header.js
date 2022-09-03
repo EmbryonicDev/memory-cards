@@ -4,6 +4,14 @@ export default function Header(props) {
   const [showInstruction, setShowInstructions] = useState(false);
   const { score, highScore } = props;
 
+  function handleMouseOver() {
+    setShowInstructions(true);
+  }
+
+  function handleMouseOut() {
+    setShowInstructions(false);
+  }
+
   return (
     <div className="headerDiv">
       <div className="textInfo">
