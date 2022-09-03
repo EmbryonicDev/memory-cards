@@ -4,7 +4,7 @@ export default function NewGame(props) {
   return (
     <div className="newGameDiv">
       <h1>GAME OVER...</h1>
-      <h3>You Selected {wrongCard} Twice!</h3>
+      <h2>You Selected {wrongCard} Twice!</h2>
       <button onClick={startNewGame}>Start New Game</button>
     </div>
   )
