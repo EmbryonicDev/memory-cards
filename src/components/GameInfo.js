@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function GameInfo(props) {
-  const [gameLevel, setGameLevel] = useState();
+  const [gameLevel, setGameLevel] = useState(1);
   const [remainingCards, setRemainingCards] = useState(9);
   const { selectedCards } = props;
 
@@ -14,7 +14,6 @@ export default function GameInfo(props) {
     const clickedCards = selectedCards - 1;
 
     // Set Level
-    clickedCards < 6 && setGameLevel(1);
     (clickedCards > 5 && clickedCards < 12) && setGameLevel(2);
     (clickedCards > 11 && clickedCards < 18) && setGameLevel(3);
     (clickedCards > 17 && clickedCards < 24) && setGameLevel(4);
