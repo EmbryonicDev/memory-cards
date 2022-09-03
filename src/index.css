@@ -84,6 +84,7 @@ code {
   max-width: 830px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 32px;
 }
 
 /* Game info / new game  / game won */
