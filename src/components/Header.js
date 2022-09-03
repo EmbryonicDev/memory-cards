@@ -33,7 +33,7 @@ export default function Header(props) {
           </div>
         }
       </div>
-      <div className="score">
+      <div className="score currentScore">
         <h2>Current Score</h2>
         <h2>{score}</h2>
       </div>
