@@ -162,11 +162,13 @@ code {
   height: 145px;
   padding: 12px 0;
   justify-content: space-between;
+  border: solid transparent;
 }
 
 .cardDiv:hover {
   transform: scale(1.1);
   cursor: pointer;
+  border: dotted white 5px
 }
 
 .cardDiv:active {
