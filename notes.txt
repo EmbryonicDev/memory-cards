@@ -25,3 +25,5 @@ Level 4 - 24 cards:
 - increase score on each Level
 - fade in new blocks on each Level
 - confetti  when game won
+
+- remaining cards based on level change
