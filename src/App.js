@@ -26,8 +26,12 @@ function App() {
     selectedCards === 30 && setGameWon(true);
 
     // Set score increments
-    if (selectedCards >= 22) {
+    if (selectedCards >= 28) {
       setScoreIncrement(11)
+    } else if (selectedCards >= 26) {
+      setScoreIncrement(9)
+    } else if (selectedCards >= 22) {
+      setScoreIncrement(8)
     } else if (selectedCards >= 18) {
       setScoreIncrement(7)
     } else if (selectedCards >= 16) {
