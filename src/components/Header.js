@@ -19,7 +19,7 @@ export default function Header(props) {
         <button
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
-        >i</button>
+        >?</button>
         {
           showInstruction &&
           <div className="instructions">
