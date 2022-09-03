@@ -56,11 +56,11 @@ export default function GameInfo(props) {
   return (
     <div className="gameInfo">
       <h1>Game Info</h1>
-      <h3>Level: {gameLevel}</h3>
-      <h3>Remaining Cards Till {selectedCards - 1 < 18 ?
+      <h2>Level: {gameLevel}</h2>
+      <h2>Remaining Cards Till {selectedCards - 1 < 18 ?
         "Next Level: " :
         "Game Completion: "}
-        {remainingCards}</h3>
+        {remainingCards}</h2>
     </div>
   )
 }
