@@ -28,7 +28,7 @@ export default function Header(props) {
               <li>After selecting all icons in level 1 you will progress to level 2</li>
               <li>Each new level will contain all previously selected cards, as well as 6 new cards</li>
               <li>As the game progresses, the score value for each selection will systematically increase</li>
-              <li>Complete all 4 levels to win the game</li>
+              <li>Complete all 5 levels to win the game</li>
             </ul>
           </div>
         }
