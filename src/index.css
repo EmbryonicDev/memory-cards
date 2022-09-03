@@ -65,10 +65,6 @@ code {
   align-items: center;
 }
 
-.headerDiv button {
-  font-size: 2rem;
-}
-
 .score {
   text-align: center;
 }
