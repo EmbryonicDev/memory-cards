@@ -59,9 +59,10 @@ code {
   margin-top: 16px;
 }
 
-/* Game info / new game */
+/* Game info / new game  / game won */
 .gameInfo,
-.newGameDiv {
+.newGameDiv,
+.gameWonDiv {
   border: solid black;
   padding: 12px;
   border-radius: 12px;
@@ -72,7 +73,8 @@ code {
 .gameInfo h1,
 .gameInfo h2,
 .newGameDiv h1,
-.newGameDiv h2 {
+.newGameDiv h2,
+.gameWonDiv h1 {
   margin: 0 0 6px;
 }
 
@@ -80,13 +82,20 @@ code {
   margin: 0;
 }
 
-.newGameDiv {
+.newGameDiv,
+.gameWonDiv {
   display: flex;
   flex-direction: column;
   background: #fb7185;
 }
 
-.newGameDiv button {
+.gameWonDiv {
+  background: #1d4ed8;
+  color: #f8fafc;
+}
+
+.newGameDiv button,
+.gameWonDiv button {
   width: 210px;
   font-family: visitorOneFont;
   font-size: 22px;
@@ -99,11 +108,13 @@ code {
   box-shadow: 3px 3px 3px black;
 }
 
-.newGameDiv button:hover {
+.newGameDiv button:hover,
+.gameWonDiv button:hover {
   cursor: pointer;
 }
 
-.newGameDiv button:active {
+.newGameDiv button:active,
+.gameWonDiv button:active {
   transform: scale(0.95);
   box-shadow: inset 0 0 10px black;
 }
