@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 export default function Header(props) {
+  const [showInstruction, setShowInstructions] = useState(false);
   const { score, highScore } = props;
 
   return (
