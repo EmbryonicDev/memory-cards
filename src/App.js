@@ -23,7 +23,7 @@ function App() {
     setSelectedCards(activeCards.filter(card => card.selected).length + 1);
 
     // Game Won
-    selectedCards === 24 && setGameWon(true);
+    selectedCards === 30 && setGameWon(true);
 
     // Set score increments
     if (selectedCards >= 22) {
