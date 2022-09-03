@@ -17,6 +17,7 @@ export default function GameInfo(props) {
     (clickedCards > 5 && clickedCards < 12) && setGameLevel(2);
     (clickedCards > 11 && clickedCards < 18) && setGameLevel(3);
     (clickedCards > 17 && clickedCards < 24) && setGameLevel(4);
+    (clickedCards > 23 && clickedCards < 30) && setGameLevel(5);
 
     // set remaining cards
     setRemainingCards(prevState => prevState - 1)
