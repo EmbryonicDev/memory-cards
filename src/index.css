@@ -35,6 +35,18 @@ code {
   position: relative;
 }
 
+.headerDiv button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding: 6px;
+  font-family: visitorOneFont;
+  border: none;
+  font-size: 2rem;
+  background: #334155;
+  color: #f8fafc;
+}
+
 .instructions {
   position: fixed;
   width: 350px;
