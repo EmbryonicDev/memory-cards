@@ -8,12 +8,12 @@ export default function Header(props) {
         <button className="instructions">i</button>
       </div>
       <div className="score">
-        <h3>Current Score</h3>
-        <h3>{score}</h3>
+        <h2>Current Score</h2>
+        <h2>{score}</h2>
       </div>
       <div className="score">
-        <h3>High Score</h3>
-        <h3>{highScore}</h3>
+        <h2>High Score</h2>
+        <h2>{highScore}</h2>
       </div>
     </div>
   )
