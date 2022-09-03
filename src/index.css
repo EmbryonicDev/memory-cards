@@ -69,6 +69,10 @@ code {
   text-align: center;
 }
 
+.currentScore {
+  color: #f8fafc;
+}
+
 /* Board */
 .board {
   display: flex;
