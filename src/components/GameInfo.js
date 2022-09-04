@@ -2,12 +2,11 @@ import { useEffect, useState } from "react";
 
 export default function GameInfo(props) {
   const [gameLevel, setGameLevel] = useState(1);
-  const [remainingCards, setRemainingCards] = useState(8);
+  const [remainingCards, setRemainingCards] = useState(6);
   const { selectedCards } = props;
 
   useEffect(() => {
-    gameLevel > 1 &&
-      setRemainingCards(6);
+    setRemainingCards(6);
   }, [gameLevel])
 
   useEffect(() => {
@@ -20,7 +19,8 @@ export default function GameInfo(props) {
     (clickedCards > 23 && clickedCards < 30) && setGameLevel(5);
 
     // set remaining cards
-    setRemainingCards(prevState => prevState - 1)
+    clickedCards > 0 &&
+      setRemainingCards(prevState => prevState - 1)
   }, [selectedCards])
 
   return (
