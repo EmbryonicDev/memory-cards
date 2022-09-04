@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function GameInfo(props) {
   const [gameLevel, setGameLevel] = useState(1);
-  const [remainingCards, setRemainingCards] = useState(9);
+  const [remainingCards, setRemainingCards] = useState(8);
   const { selectedCards } = props;
 
   useEffect(() => {
